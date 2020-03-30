@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Raleway&display=swap');
+/*fonts:
+font-family: 'Raleway', sans-serif;
+font-family: 'PT Serif', serif;
+*/
+
+/*colours:
+body bg: #d9d0c7 Light brown;
+nav  bg: #b2bf50 light green;
+masthead and footer bg: #a69586 dark brown;
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 90%;
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.4;
+    background-color: #d9d0c7;
+}
+
+h1, h2, h3 {
+font-family: 'PT Serif', serif;
+margin: 0 0.50rem;
+color: #0d0d0d;
+}
+
+p, .buttons {
+    margin: 0 0.50rem;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li  {
+    display: inline;
+}
+
+/*nav*/
+
+nav {
+    width: 150%;
+    margin: 0;
+    padding: 1rem;
+    background-color: #b2bf50;
+}
+
+nav li a {
+    margin: 2rem;
+    padding: 2rem 0;
+    color: #fefefe;
+    text-decoration: none;
+}
+
+/* main */
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 115%;
+}
+
+.masthead {
+    background-color: #a69586;
+    width: 150%;
+    padding: 5rem 2rem;
+}
+
+.masthead h1 {
+    color: #fefefe;
+}
+
+.masthead p:nth-child(2) {
+    color: #fefefe;
+}
+
+/*buttons*/
+#active-btn {
+    background-color: #a69586;
+    color: #fefefe;
+}
+
+.buttons {
+    margin: 0.75rem;
+    padding: 0.75rem;
+    border-radius: 0.50rem;
+    cursor: pointer;
+}
+
+.buttons button {
+    padding: 0 0 0.5rem 0;
+    margin: 0 3rem 0 0;
+}
+
+button:hover {
+    background-color: #b2bf50;
+    color: #fefefe;
+}
+
+#active-btn:hover {
+    color: #808c27;
+}
+
+/*content*/
+.container {
+    margin: 0 5rem;
+    max-width: 50rem;
+}
+
+.main-content img {
+    display: block;
+    width: 250px;
+    height: auto;
+    margin: 0 0 3rem 0;
+}
+
+.data h2 {
+    margin: 1rem;
+}
+
+.data p {
+    margin: 1rem 0;
+}
+
+.data {
+    align-self: flex-end;
+}
+
+/*footer*/
+.foot {
+    background-color: #a69586;
+    width: 150%;
+
+}
+
+.foot li a {
+    display: inline-block;
+    margin: 0.75rem 0.25rem;
+}
+/* unvisited link */
+.foot a:link {
+    color: #b2bf50
+  }
+  
+  /* visited link */
+  .foot a:visited {
+    color: #ffd48f;
+  }
+  
+  /* mouse over link */
+  .foot a:hover {
+    color: #d9d0c7;
+  }
+  
+  /* selected link */
+  .foot a:active {
+    color: #21ffa6;
+  }
+
+@media all and (min-width: 30rem) {
+    .main-content img {
+        width: 400px;
+        margin: 0 1.5rem 1rem 0;
+    }
+}
